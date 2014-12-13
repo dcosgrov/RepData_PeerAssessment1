@@ -126,7 +126,7 @@ of ~10K.  This spike was lowered from 10 to 9 days, and, generally speaking,
 the estimates are not as tightly clustered around the mean with the imputed
 values incorporated.
 
-```{r message=FALSE,echo=TRUE}
+```{r imputed_avg_steps_per_day }
 qplot(imputeDailyStepTotals$steps, main="Total number of steps taken each day
       (random imputed values)", 
       xlab="Daily Step Total", ylab="Count of Days", ylim=c(0,10), 
@@ -169,7 +169,7 @@ high level of early morning activity, and, on average, this activity remains
 at a low level (rarely realize 100+ steps per interval).  On the other hand, 
 during the weekend, there are a large number of intervals throughout the day
 that exceed the 100+ step per interval mark.
-```{r}
+```{r lattice_plot_weekend_weekday_differences}
 
 #Build lattice plot to hightlight weekday and weekend differences
 xyplot( x ~ interval | day_type, 

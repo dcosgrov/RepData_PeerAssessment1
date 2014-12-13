@@ -186,14 +186,14 @@ qplot(imputeDailyStepTotals$steps, main="Total number of steps taken each day
       binwidth=1000)
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
+![plot of chunk imputed_avg_steps_per_day](figure/imputed_avg_steps_per_day-1.png) 
 
 ```r
 mean(imputeDailyStepTotals$steps)
 ```
 
 ```
-## [1] 10569.69
+## [1] 10861.1
 ```
 
 ```r
@@ -201,7 +201,7 @@ median(imputeDailyStepTotals$steps)
 ```
 
 ```
-## [1] 10571
+## [1] 10765
 ```
 
 ## Are there differences in activity patterns between weekdays and weekends
@@ -246,6 +246,6 @@ xyplot( x ~ interval | day_type,
         layout=c(1,2))
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
+![plot of chunk lattice_plot_weekend_weekday_differences](figure/lattice_plot_weekend_weekday_differences-1.png) 
 
 
