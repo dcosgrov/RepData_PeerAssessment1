@@ -244,4 +244,3 @@ xyplot( x ~ interval | day_type,
 ![](./PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
 
 
-

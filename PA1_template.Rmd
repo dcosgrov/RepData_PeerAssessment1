@@ -180,4 +180,3 @@ xyplot( x ~ interval | day_type,
 ```
 
 
-
