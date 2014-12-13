@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: 'Reproducible Research: Peer Assessment 1'
+output:
+  html_document:
+    keep_md: yes
+---
 
 
 ## Loading and preprocessing the data
@@ -47,7 +52,7 @@ qplot(dailyStepTotals$steps, main="Total number of steps taken each day",
       ylim=c(0,10), binwidth=1000)
 ```
 
-![](./PA1_template_files/figure-html/plot_total_steps_per_day-1.png) 
+![plot of chunk plot_total_steps_per_day](figure/plot_total_steps_per_day-1.png) 
 
 The mean and median number of steps taken per day are reported below:
 
@@ -88,7 +93,7 @@ plot( steps ~ interval, data=AverageStepsByInterval, type="l",
       )
 ```
 
-![](./PA1_template_files/figure-html/avg_steps_by_interval-1.png) 
+![plot of chunk avg_steps_by_interval](figure/avg_steps_by_interval-1.png) 
 
 ```r
 intervalWithMax <- AverageStepsByInterval[which.max(AverageStepsByInterval$steps),]$interval
@@ -181,14 +186,14 @@ qplot(imputeDailyStepTotals$steps, main="Total number of steps taken each day
       binwidth=1000)
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 ```r
 mean(imputeDailyStepTotals$steps)
 ```
 
 ```
-## [1] 10853.92
+## [1] 10569.69
 ```
 
 ```r
@@ -196,7 +201,7 @@ median(imputeDailyStepTotals$steps)
 ```
 
 ```
-## [1] 11013
+## [1] 10571
 ```
 
 ## Are there differences in activity patterns between weekdays and weekends
@@ -241,6 +246,6 @@ xyplot( x ~ interval | day_type,
         layout=c(1,2))
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
 
 
